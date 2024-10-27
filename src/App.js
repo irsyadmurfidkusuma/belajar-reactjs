@@ -18,7 +18,7 @@ const App = () => {
     return (
       <div>
         <i>mantab bang</i>
-        <marquee>ini footer yaa tod</marquee>
+        <marquee>ini footer berjalan ya cog yaa</marquee>
       </div>
     )
   }
