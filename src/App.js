@@ -30,6 +30,7 @@ const App = () => {
         <Navbar navHeader={navHeader} navContact={navContact} />
         <img src={logo} className="App-logo" alt="logo" />
         <p>Belajar React JS</p>
+        <p>Irsyad Murfid Kusuma</p>
         <MyButton clicked={clicked} />
         <Footer paragraf={paragraf} />
       </header>
