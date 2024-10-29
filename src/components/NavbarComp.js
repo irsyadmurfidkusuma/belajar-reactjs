@@ -1,31 +1,21 @@
 import React from "react"
-import NavbarEx from 'react-bootstrap/Navbar'
-import { Nav, Container } from "react-bootstrap"
+import { Navbar, Nav, Container } from "react-bootstrap"
 
-
-function NavbarComp(props) {
+const NavbarComp = ({ navbarValue }) => {
     return (
         <div>
-            {/* Belajar componet dan props */}
-            {/* <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <ul>
-                    <li><a href="#">{props.navHeader}</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">{props.navContact}</a></li>
-                </ul>
-            </nav> */}
-
-
-
-            {/* Belajar  state */}
-            <NavbarEx>
+            <Navbar expand="lg" className="bg-body-tertiary">
                 <Container>
-                    <Navbar.Brand href="#home">Home</Navbar.Brand>
-                    <Nav.Link href="#home">Home</Nav.Link>
-
+                    <Navbar.Brand href="#home">Irsyad Corp</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link href="#link">{!navbarValue ? "About" : navbarValue}</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
-            </NavbarEx>
+            </Navbar>
         </div>
     )
 }
