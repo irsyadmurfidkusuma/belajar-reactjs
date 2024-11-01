@@ -9,8 +9,8 @@ class Footer extends React.Component {
     render() {
         return (
             <div>
-                <h2>Footer</h2>
-                {this.props.paragraf()}
+                {/* <h2>Footer</h2>
+                {this.props.paragraf()} */}
             </div>
         )
     }

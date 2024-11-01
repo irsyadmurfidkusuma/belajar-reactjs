@@ -1,7 +1,8 @@
+import React from "react"
 const MyButton = (props) => {
     return (
         <div>
-            <button onClick={() => props.clicked()}>Klik Saya!</button>
+            <MyButton onClick={() => props.clicked()}>Klik Saya!</MyButton>
         </div>
     )
 }
